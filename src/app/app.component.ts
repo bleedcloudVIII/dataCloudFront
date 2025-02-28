@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {MatTab, MatTabGroup} from '@angular/material/tabs';
+import {NgForOf} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    MatTabGroup,
+    MatTab,
+    NgForOf
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'cloud';
+  tabs = ['location', 'location1', 'location2', 'location', 'location1', 'location2'];
+
 }
