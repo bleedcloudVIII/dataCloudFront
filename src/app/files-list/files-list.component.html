@@ -1,8 +1,12 @@
 <div class="list">
   <ng-container *ngFor="let file of files">
-      <div class="list__block block">
+      <div class="list__block block" (click)="onFileClick(file)">
         <img class="block__img" src="file.svg">
         <span class="block__text">{{ file }}</span>
       </div>
   </ng-container>
+  <div class="add-block" (click)="onAddClick()">
+    <div class="add-block__plus">+</div>
+    <div class="add-block__text">Добавить<br>файл</div>
+  </div>
 </div>

@@ -14,6 +14,14 @@ export class FilesListComponent {
   @Input() files!: string[];
 
   constructor() {
-
   }
+
+  onAddClick() {
+    console.log('adas');
+  }
+
+  onFileClick(name: string) {
+    // TODO NE RABOTAET
+  }
+
 }
