@@ -4,7 +4,7 @@
       <img class="name__img-cloud" src="cloud.svg">
       <span class="name__text" >DataCloud</span>
     </div>
-    <img class="header__img-account" src="account.svg">
+    <img class="header__img-account" src="account.svg" (click)="onAccountClick()">
   </header>
   <mat-tab-group class="main-container__tabs-group tabs-group" [animationDuration]="0">
     <ng-container *ngFor="let tab of tabs; index as i">
