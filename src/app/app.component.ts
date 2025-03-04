@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import {MatTab, MatTabGroup} from '@angular/material/tabs';
 import {NgForOf} from '@angular/common';
 import {FilesListComponent} from './files-list/files-list.component';
-import { RegistrationComponent } from './registration/registration.component';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {AuthComponent} from './auth/auth.component';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +24,7 @@ export class AppComponent {
   }
 
   onAccountClick() {
-    const dialogRef = this.dialog.open(RegistrationComponent);
+    const dialogRef = this.dialog.open(AuthComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {

@@ -1,0 +1,31 @@
+<div>
+  <mat-tab-group>
+    <mat-tab label="Вход">
+      <div class="main-container">
+        <form class="main-container__form form" [formGroup]="loginForm">
+          <div class="form__input-block input-block">
+            <input class="input-block__input" placeholder="Username" formControlName="username">
+          </div>
+          <div class="form__input-block input-block">
+            <input class="input-block__input" placeholder="Пароль" formControlName="password">
+          </div>
+          <button class="form__button">Войти</button>
+        </form>
+      </div>
+    </mat-tab>
+    <mat-tab label="Регистрация">
+      <div class="main-container">
+        <form class="main-container__form form" [formGroup]="registrationForm">
+          <div class="form__input-block input-block">
+            <input class="input-block__input" placeholder="Username" formControlName="username">
+          </div>
+          <div class="form__input-block input-block">
+            <input class="input-block__input" placeholder="Пароль" formControlName="password">
+          </div>
+          <button class="form__button">Зарегистрироваться</button>
+        </form>
+      </div>
+
+    </mat-tab>
+  </mat-tab-group>
+</div>
