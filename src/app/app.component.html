@@ -6,7 +6,7 @@
     </div>
     <img class="header__img-account" src="account.svg" (click)="onAccountClick()">
   </header>
-  <mat-tab-group class="main-container__tabs-group tabs-group" [animationDuration]="0">
+  <mat-tab-group class="main-container__tabs-group tabs-group">
     <ng-container *ngFor="let tab of tabs; index as i">
         <mat-tab class="tabs-group__tab" [label]="tab">
           <app-files-list [files]="files[i]"></app-files-list>
