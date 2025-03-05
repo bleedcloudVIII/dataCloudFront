@@ -10,8 +10,9 @@
         <span class="block__text">{{ file }}</span>
       </div>
   </ng-container>
-  <div class="add-block" (click)="onAddClick()">
+  <label for="file-upload" class="add-block" >
     <div class="add-block__plus">+</div>
     <div class="add-block__text">Добавить<br>файл</div>
-  </div>
+  </label>
+  <input id="file-upload" type="file" style="display: none;">
 </div>
