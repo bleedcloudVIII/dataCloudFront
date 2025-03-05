@@ -14,5 +14,5 @@
     <div class="add-block__plus">+</div>
     <div class="add-block__text">Добавить<br>файл</div>
   </label>
-  <input id="file-upload" type="file" style="display: none;">
+  <input id="file-upload" (input)="onFileSelected($event)" type="file" style="display: none;">
 </div>
