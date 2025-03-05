@@ -1,8 +1,9 @@
 <div class="list">
   <ng-container *ngFor="let file of files">
       <div class="list__block block">
-        <img class="block__img"
-             (click)="onFileClick(file)"
+        <img alt="file"
+             class="block__img"
+             (click)="onFileClick()"
              src="file.svg"
              onmouseover="this.src='file_download.svg';"
              onmouseout="this.src='file.svg';">

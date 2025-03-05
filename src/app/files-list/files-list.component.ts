@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {MatTab} from '@angular/material/tabs';
 import {NgForOf} from '@angular/common';
 
 @Component({
@@ -20,7 +19,7 @@ export class FilesListComponent {
     console.log('adas');
   }
 
-  onFileClick(name: string) {
+  onFileClick() {
     // TODO NE RABOTAET
     console.log('a');
   }
