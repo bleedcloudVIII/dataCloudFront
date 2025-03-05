@@ -22,6 +22,7 @@ export class FilesListComponent {
 
   onFileClick(name: string) {
     // TODO NE RABOTAET
+    console.log('a');
   }
 
 }
